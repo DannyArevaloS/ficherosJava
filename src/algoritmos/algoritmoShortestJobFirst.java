@@ -14,7 +14,6 @@ public class algoritmoShortestJobFirst {
         procesos.add(new Proceso(2, 5));
         procesos.add(new Proceso(3, 2));
 
-        //
         PriorityQueue<Proceso> colaPrioridad = new PriorityQueue<>(Comparator.comparingInt(p -> p.tiempoEjecucion));
         colaPrioridad.addAll(procesos);
 
