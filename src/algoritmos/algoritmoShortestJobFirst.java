@@ -1,6 +1,10 @@
 package algoritmos;
 import java.util.*;
 
+/**
+ * El objetivo es ejecutar primero el proceso con el menor tiempo de ejecución.
+ * */
+
 
 public class algoritmoShortestJobFirst {
 
@@ -10,6 +14,7 @@ public class algoritmoShortestJobFirst {
         procesos.add(new Proceso(2, 5));
         procesos.add(new Proceso(3, 2));
 
+        //
         PriorityQueue<Proceso> colaPrioridad = new PriorityQueue<>(Comparator.comparingInt(p -> p.tiempoEjecucion));
         colaPrioridad.addAll(procesos);
 
